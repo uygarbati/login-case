@@ -24,7 +24,7 @@ function Login() {
     const formHandle = () => {
         AuthService.login(formData).then(
             response => {
-                if (response.length == 1) {
+                if (response.length === 1) {
                     alert(t('form:success_login'))
                 } else {
                     alert(t('form:invalid_credentials'))
