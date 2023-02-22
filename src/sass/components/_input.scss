@@ -1,0 +1,23 @@
+.pr__input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $gray-tertiary;
+    border-radius: 0.07rem;
+    outline: 0;
+    padding: 0;
+    font-size: 14px;
+    color: $white;
+    height: 39px;
+    background: transparent;
+
+    &::placeholder {
+        color: $white;
+        font-family: 'Hind';
+    }
+
+    &:focus {
+        &::placeholder {
+            color: transparent;
+        }
+    }
+}

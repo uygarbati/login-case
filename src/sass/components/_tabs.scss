@@ -1,0 +1,66 @@
+.tabs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px;
+
+    &__tab label {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray-secondary;
+        color: $gray-secondary;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__tab [type="radio"] {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    &__tab [type="radio"]:checked+label {
+        padding-bottom: 14px;
+
+        &.green {
+            @include tabs-bg($green)
+        }
+
+        &.red {
+            @include tabs-bg($red)
+        }
+    }
+
+    &__tab [type="radio"]:checked+label+div {
+        display: block;
+    }
+
+    &__tab [type="radio"]+label+div {
+        display: none;
+    }
+
+    &__tab {
+        width: 50%;
+    }
+
+    &__tab [type="radio"]+label+div {
+        display: none;
+        width: 200%;
+    }
+
+    &__tab:last-child [type="radio"]:checked+label+div {
+        margin-left: -100%;
+    }
+}

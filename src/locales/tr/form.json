@@ -1,0 +1,9 @@
+{
+    "name_placeholder": "Adınız Soyadınız",
+    "email_placeholder": "E-posta Adresiniz",
+    "password_placeholder": "Parolanız",
+    "sign_in": "Giriş Yap",
+    "sign_up": "Üye Ol",
+    "invalid_credentials": "Geçersiz e-posta veya parola",
+    "success_login": "Giriş başarılı"
+}

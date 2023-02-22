@@ -1,0 +1,16 @@
+@mixin button-bg($bg) {
+    background: $bg;
+
+    &:hover {
+        background: $bg;
+    }
+
+    &:active {
+        background: $bg;
+    }
+}
+
+@mixin tabs-bg($color) {
+    border-bottom: 3px solid $color;
+    color: $color;
+}
